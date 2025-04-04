@@ -1,5 +1,5 @@
 {
-  "name": "@pinux/d3-color",
+  "name": "@pingux/d3-color",
   "version": "3.1.0",
   "description": "Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).",
   "homepage": "https://d3js.org/d3-color/",
@@ -29,9 +29,6 @@
     "src/**/*.js"
   ],
   "module": "src/index.js",
-  "main": "dist/d3-color.js",
-  "jsdelivr": "dist/d3-color.min.js",
-  "unpkg": "dist/d3-color.min.js",
   "sideEffects": false,
   "devDependencies": {
     "eslint": "8",

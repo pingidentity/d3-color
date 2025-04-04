@@ -1,3 +1,5 @@
+_This is a fork of the `d3-color` package and includes an export fix._
+
 # d3-color
 
 <a href="https://d3js.org"><img src="https://github.com/d3/d3/raw/main/docs/public/logo.svg" width="256" height="256"></a>

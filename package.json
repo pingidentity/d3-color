@@ -2,11 +2,6 @@
   "name": "@pingux/d3-color",
   "version": "3.1.0",
   "description": "Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).",
-  "homepage": "https://d3js.org/d3-color/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/d3/d3-color.git"
-  },
   "keywords": [
     "d3",
     "d3-module",
@@ -19,16 +14,17 @@
     "cubehelix"
   ],
   "license": "ISC",
-  "author": {
-    "name": "Mike Bostock",
-    "url": "http://bost.ocks.org/mike"
-  },
-  "type": "module",
   "files": [
     "dist/**/*.js",
     "src/**/*.js"
   ],
+  "main": "dist/d3-color.js",
+  "unpkg": "dist/d3-color.min.js",
+  "jsdelivr": "dist/d3-color.min.js",
   "module": "src/index.js",
+  "exports": {
+    ".": "./dist/d3-color.js"
+  },
   "sideEffects": false,
   "devDependencies": {
     "eslint": "8",
@@ -38,7 +34,7 @@
   },
   "scripts": {
     "test": "mocha 'test/**/*-test.js' && eslint src test",
-    "prepublishOnly": "rm -rf dist && yarn test && rollup -c"
+    "prepublishOnly": "rm -rf dist && rollup -c"
   },
   "engines": {
     "node": ">=12"

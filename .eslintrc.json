@@ -5,6 +5,7 @@
     "ecmaVersion": 8
   },
   "rules": {
-    "no-cond-assign": 0
+    "no-cond-assign": 0,
+    "no-undef":"off"
   }
 }

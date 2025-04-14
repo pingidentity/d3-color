@@ -18,6 +18,7 @@
     "dist/**/*.js",
     "src/**/*.js"
   ],
+  "type": "commonjs",
   "main": "dist/d3-color.js",
   "unpkg": "dist/d3-color.min.js",
   "jsdelivr": "dist/d3-color.min.js",
@@ -29,12 +30,14 @@
   "devDependencies": {
     "eslint": "8",
     "mocha": "9",
+    "tape": "4",
     "rollup": "2",
     "rollup-plugin-terser": "7"
   },
   "scripts": {
-    "test": "mocha 'test/**/*-test.js' && eslint src test",
-    "prepublishOnly": "rm -rf dist && rollup -c"
+    "pretest": "rollup -c",
+    "test": "tape 'test/**/*-test.js' && eslint src test",
+    "prepublishOnly": "rm -rf dist && yarn test && rollup -c"
   },
   "engines": {
     "node": ">=12"

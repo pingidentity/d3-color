@@ -18,7 +18,6 @@
     "dist/**/*.js",
     "src/**/*.js"
   ],
-  "type": "commonjs",
   "main": "dist/d3-color.js",
   "unpkg": "dist/d3-color.min.js",
   "jsdelivr": "dist/d3-color.min.js",

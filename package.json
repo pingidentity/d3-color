@@ -1,6 +1,6 @@
 {
   "name": "@pingux/d3-color",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).",
   "keywords": [
     "d3",
